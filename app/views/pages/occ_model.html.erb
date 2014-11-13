@@ -1,194 +1,580 @@
 <h1>OCC Model of Emotions</h1>
-    <h2>Cognitive Variables of OCC Emotion Model</h2>
-    <table border=1>
-      <tr>
-        <th style="padding:10px;">Type</th>
-        <th style="padding:10px;">Variable Name</th>
-        <th style="padding:10px;">Possible Enumerated Values</th>
-      </tr>
-      <tr>
-        <td style="padding:10px;">
-          <b>Agent-based</b>
-        </td>
-        <td style="padding:10px;">
-          agent fondness (af)<br/>
-          direction of emotion (de)
-        </td>
-        <td style="padding:10px;">
-          liked, not liked<br/>
-          self, other
-        </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;">
-          <b>Object-based</b>
-        </td>
-        <td style="padding:10px;">
-          object fondness (of)<br/>
-          object appealing (oa)
-        </td>
-        <td style="padding:10px;">
-          liked, not liked<br/>
-          attractive, not attractive
-        </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Event-based</b></td>
-        <td style="padding:10px;">
-          self reaction (sr)<br/>
-          self presumption (sp)<br/>
-          other presumption (op)<br/>
-          prospect (pros)<br/>
-          status (stat)<br/>
-          unexpectedness (unexp)<br/>
-          self appraisal (sa)<br/>
-          valenced reaction (vr)<br/>
-        </td>
-        <td style="padding:10px;">
-          pleased, displeased<br/>
-          desirable, undesirable<br/>
-          desirable, undesirable<br/>
-          positive, negative<br/>
-          unconfirmed, confirmed, disconfirmed<br/>
-          true, false<br/>
-          praiseworthy, blameworthy<br/>
-          true, false<br/>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Intensity</b></td>
-        <td style="padding:10px;">
-          event deservingness (ed)<br/>
-          effort of action (eoa)<br/>
-          expected deviation (edev)<br/>
-          event familiarity (ef)<br/>
-        </td>
-        <td style="padding:10px;">
-          high, low<br/>
-          obvious, not obvious<br/>
-          high, low<br/>
-          common, uncommon<br/>
-        </td>
-      </tr>
-    </table>
+<h2>Cognitive Variables of OCC Emotion Model</h2>
+<table border=1>
+  <tr>
+    <th style="padding:10px;">Type</th>
+    <th style="padding:10px;">Variable Name</th>
+    <th style="padding:10px;">Possible Enumerated Values</th>
+  </tr>
+  <tr>
+    <td style="padding:10px;">
+      <b>Agent-based</b>
+    </td>
+    <td style="padding:10px;">
+      agent fondness (af)<br/>
+      direction of emotion (de)
+    </td>
+    <td style="padding:10px;">
+      liked, not liked<br/>
+      self, other
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">
+      <b>Object-based</b>
+    </td>
+    <td style="padding:10px;">
+      object fondness (of)<br/>
+      object appealing (oa)
+    </td>
+    <td style="padding:10px;">
+      liked, not liked<br/>
+      attractive, not attractive
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Event-based</b></td>
+    <td style="padding:10px;">
+      self reaction (sr)<br/>
+      self presumption (sp)<br/>
+      other presumption (op)<br/>
+      prospect (pros)<br/>
+      status (stat)<br/>
+      unexpectedness (unexp)<br/>
+      self appraisal (sa)<br/>
+      valenced reaction (vr)<br/>
+    </td>
+    <td style="padding:10px;">
+      pleased, displeased<br/>
+      desirable, undesirable<br/>
+      desirable, undesirable<br/>
+      positive, negative<br/>
+      unconfirmed, confirmed, disconfirmed<br/>
+      true, false<br/>
+      praiseworthy, blameworthy<br/>
+      true, false<br/>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Intensity</b></td>
+    <td style="padding:10px;">
+      event deservingness (ed)<br/>
+      effort of action (eoa)<br/>
+      expected deviation (edev)<br/>
+      event familiarity (ef)<br/>
+    </td>
+    <td style="padding:10px;">
+      high, low<br/>
+      obvious, not obvious<br/>
+      high, low<br/>
+      common, uncommon<br/>
+    </td>
+  </tr>
+</table>
 
-    <h2>The Definitions (from 'Self' Perspective) of Appraisal Rules for the OCC Emotion Types</h2>
-    <table border=1>
-      <tr>
-        <th style="padding:10px;">Emotion</th>
-        <th style="padding:10px;">Definition</th>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Joy</b></td>
-        <td style="padding:10px;">  Pleased about a Desirable event  </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Distress </b></td>
-        <td style="padding:10px;">   Displeased about an Undesirable event </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Happy-for </b></td>
-        <td style="padding:10px;">   Pleased about an event Desirable for a Liked agent </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Sorry-for </b></td>
-        <td style="padding:10px;">   Displeased about an event Undesirable for a Liked agent </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Resentment </b></td>
-        <td style="padding:10px;">   Displeased about an event Desirable for another agent who is a Not Liked agent</td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Gloating </b></td>
-        <td style="padding:10px;">   Pleased about an event Undesirable for another agent who is a Not Liked agent </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Hope </b></td>
-        <td style="padding:10px;">  Pleased about Positive Prospect of a Desirable Unconfirmed event </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Fear </b></td>
-        <td style="padding:10px;">   Displeased about Negative Prospect of an Undesirable Unconfirmed event </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Satisfaction </b></td>
-        <td style="padding:10px;">   Pleased about Confirmation of Positive Prospect of a Desirable event </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Fears-confirmed </b></td>
-        <td style="padding:10px;">   Displeased about Confirmation of Negative Prospect of a Undesirable event </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Relief </b></td>
-        <td style="padding:10px;">   Pleased about Disconfirmation of Negative Prospect of an Undesirable event  </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Disappointment </b></td>
-        <td style="padding:10px;">   Displeased about Disconfirmation of Positive Prospect of a Desirable event </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Shock </b></td>
-        <td style="padding:10px;">   Distress emotion with Unexpected Undesirable event </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Surprise </b></td>
-        <td style="padding:10px;">   Joy emotion with Unexpected Desirable event </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Jealousy </b></td>
-        <td style="padding:10px;">   resentment over a Desired mutually exclusive goal </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Envy </b></td>
-        <td style="padding:10px;">   resentment over a Desired non-exclusive goal  </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Pride </b></td>
-        <td style="padding:10px;">   Pleased for Praiseworthy action/event of Self  </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Shame </b></td>
-        <td style="padding:10px;">  Displeased for Blameworthy action/event of Self </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Admiration </b></td>
-        <td style="padding:10px;">   Pleased for Praiseworthy action/event of Other  </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Reproach </b></td>
-        <td style="padding:10px;">   Displeased for Blameworthy action/event of Other </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Gratification </b></td>
-        <td style="padding:10px;">   Higher Joy emotion with higher Pride emotion </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Remorse </b></td>
-        <td style="padding:10px;">   Higher Distress emotion with higher Shame emotion </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Liking </b></td>
-        <td style="padding:10px;">   finding an object appealing  </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Disliking </b></td>
-        <td style="padding:10px;">   finding an object unappealing</td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Gratitude </b></td>
-        <td style="padding:10px;">   Higher Joy with higher Admiration </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Anger </b></td>
-        <td style="padding:10px;">   Higher Distress with higher Reproach  </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Love </b></td>
-        <td style="padding:10px;">  Liking an Attractive entity (e.g., agent or object) </td>
-      </tr>
-      <tr>
-        <td style="padding:10px;"><b>Hate </b></td>
-        <td style="padding:10px;">   Disliking an Unattractive entity </td>
-      </tr>
-    </table>
+<h2>The Definitions (from 'Self' Perspective) of Appraisal Rules for the OCC Emotion Types</h2>
+<table border=1>
+  <tr>
+    <th style="padding:10px;">Emotion</th>
+    <th style="padding:10px;">Definition</th>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Joy</b></td>
+    <td style="padding:10px;">  Pleased about a Desirable event  </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Distress </b></td>
+    <td style="padding:10px;">   Displeased about an Undesirable event </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Happy-for </b></td>
+    <td style="padding:10px;">   Pleased about an event Desirable for a Liked agent </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Sorry-for </b></td>
+    <td style="padding:10px;">   Displeased about an event Undesirable for a Liked agent </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Resentment </b></td>
+    <td style="padding:10px;">   Displeased about an event Desirable for another agent who is a Not Liked agent</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Gloating </b></td>
+    <td style="padding:10px;">   Pleased about an event Undesirable for another agent who is a Not Liked agent </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Hope </b></td>
+    <td style="padding:10px;">  Pleased about Positive Prospect of a Desirable Unconfirmed event </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Fear </b></td>
+    <td style="padding:10px;">   Displeased about Negative Prospect of an Undesirable Unconfirmed event </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Satisfaction </b></td>
+    <td style="padding:10px;">   Pleased about Confirmation of Positive Prospect of a Desirable event </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Fears-confirmed </b></td>
+    <td style="padding:10px;">   Displeased about Confirmation of Negative Prospect of a Undesirable event </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Relief </b></td>
+    <td style="padding:10px;">   Pleased about Disconfirmation of Negative Prospect of an Undesirable event  </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Disappointment </b></td>
+    <td style="padding:10px;">   Displeased about Disconfirmation of Positive Prospect of a Desirable event </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Shock </b></td>
+    <td style="padding:10px;">   Distress emotion with Unexpected Undesirable event </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Surprise </b></td>
+    <td style="padding:10px;">   Joy emotion with Unexpected Desirable event </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Jealousy </b></td>
+    <td style="padding:10px;">   resentment over a Desired mutually exclusive goal </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Envy </b></td>
+    <td style="padding:10px;">   resentment over a Desired non-exclusive goal  </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Pride </b></td>
+    <td style="padding:10px;">   Pleased for Praiseworthy action/event of Self  </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Shame </b></td>
+    <td style="padding:10px;">  Displeased for Blameworthy action/event of Self </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Admiration </b></td>
+    <td style="padding:10px;">   Pleased for Praiseworthy action/event of Other  </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Reproach </b></td>
+    <td style="padding:10px;">   Displeased for Blameworthy action/event of Other </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Gratification </b></td>
+    <td style="padding:10px;">   Higher Joy emotion with higher Pride emotion </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Remorse </b></td>
+    <td style="padding:10px;">   Higher Distress emotion with higher Shame emotion </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Liking </b></td>
+    <td style="padding:10px;">   finding an object appealing  </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Disliking </b></td>
+    <td style="padding:10px;">   finding an object unappealing</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Gratitude </b></td>
+    <td style="padding:10px;">   Higher Joy with higher Admiration </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Anger </b></td>
+    <td style="padding:10px;">   Higher Distress with higher Reproach  </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Love </b></td>
+    <td style="padding:10px;">  Liking an Attractive entity (e.g., agent or object) </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;"><b>Hate </b></td>
+    <td style="padding:10px;">   Disliking an Unattractive entity </td>
+  </tr>
+</table>
 
+<h1>Scene-by-scene analysis</h1>
+
+<table border=1>
+  <tr>
+    <td style="padding:10px;">Time</td>
+    <td style="padding:10px;">Screenshot</td>
+    <td style="padding:10px;">OCC Emotion</td>
+    <td style="padding:10px;">Actor</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">0:00 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0012.jpeg" %></td>
+    <td style="padding:10px;"> </td>
+    <td style="padding:10px;"> </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">0:34 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0062.jpeg" %></td>
+    <td style="padding:10px;"> Joy </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">0:49 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0091.jpeg" %></td>
+    <td style="padding:10px;"> Dissapointment </td>
+    <td style="padding:10px;"> Whistles </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">1:00 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0104.jpeg" %></td>
+    <td style="padding:10px;"> Anger  </td>
+    <td style="padding:10px;"> Pete </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">1:05 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0114.jpeg" %></td>
+    <td style="padding:10px;"> Distres </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">1:07 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0125.jpeg" %></td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Shame/Remorse</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Reproach</td>
+        </tr>
+      </table>
+    </td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Mickey</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;"> Pete </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">1:13 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0137.jpeg" %></td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Resentment</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Jealousy</td>
+        </tr>
+      </table>
+    </td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Mickey</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;"> Mickey</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table border=1>
+  <tr>
+    <td style="padding:10px;">Time</td>
+    <td style="padding:10px;">Screenshot</td>
+    <td style="padding:10px;">OCC Emotion</td>
+    <td style="padding:10px;">Actor</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">1:25 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0168.jpeg" %></td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Resentment</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Gloating</td>
+        </tr>
+      </table>
+    </td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Mickey</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;"> Parrot</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">1:40 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0189.jpeg" %></td>
+    <td style="padding:10px;"> Satisfaction </td>
+    <td style="padding:10px;"> Pete </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">2:02 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0222.jpeg" %></td>
+    <td style="padding:10px;"> ??? </td>
+    <td style="padding:10px;">  Pete </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">2:11 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0240.jpeg" %></td>
+    <td style="padding:10px;"> Disliking </td>
+    <td style="padding:10px;">  Pete </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">2:41 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0314.jpeg" %></td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Sorry-for</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Distress</td>
+        </tr>
+      </table>
+    </td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Mickey</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;"> Cow</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table border=1>
+  <tr>
+    <td style="padding:10px;">Time</td>
+    <td style="padding:10px;">Screenshot</td>
+    <td style="padding:10px;">OCC Emotion</td>
+    <td style="padding:10px;">Actor</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">2:52 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0337.jpeg" %></td>
+    <td style="padding:10px;"> (frustration) </td>
+    <td style="padding:10px;">  Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">3:01 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0354.jpeg" %></td>
+    <td style="padding:10px;"> Satisfaction </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">3:05 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0367.jpeg" %></td>
+    <td style="padding:10px;"> Distress </td>
+    <td style="padding:10px;"> Minnie </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">3:23 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0396.jpeg" %></td>
+    <td style="padding:10px;"> Sorry-for </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">3:33 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0418.jpeg" %></td>
+    <td style="padding:10px;"> Relief </td>
+    <td style="padding:10px;"> Minnie </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">3:40 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0436.jpeg" %></td>
+    <td style="padding:10px;"> Hope </td>
+    <td style="padding:10px;"> Goat </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">3:47 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0449.jpeg" %></td>
+    <td style="padding:10px;"> Shame </td>
+    <td style="padding:10px;"> Hook </td>
+  </tr>
+</table>
+<table border=1>
+  <tr>
+    <td style="padding:10px;">Time</td>
+    <td style="padding:10px;">Screenshot</td>
+    <td style="padding:10px;">OCC Emotion</td>
+    <td style="padding:10px;">Actor</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">3:53 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0458.jpeg" %></td>
+    <td style="padding:10px;"> Liking </td>
+    <td style="padding:10px;"> Minnie </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">3:54 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0461.jpeg" %></td>
+    <td style="padding:10px;"> Distress </td>
+    <td style="padding:10px;"> Minnie </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">4:03 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0473.jpeg" %></td>
+    <td style="padding:10px;"> Anger </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">4:09 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0492.jpeg" %></td>
+    <td style="padding:10px;"> Hope</td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">4:27 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0525.jpeg" %></td>
+    <td style="padding:10px;"> Gratification </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">4:37 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0540.jpeg" %></td>
+    <td style="padding:10px;"> Hope </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+</table>
+<table border=1>
+  <tr>
+    <td style="padding:10px;">Time</td>
+    <td style="padding:10px;">Screenshot</td>
+    <td style="padding:10px;">OCC Emotion</td>
+    <td style="padding:10px;">Actor</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">5:10 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0570.jpeg" %></td>
+    <td style="padding:10px;"> Satisfaction </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">5:20 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0631.jpeg" %></td>
+    <td style="padding:10px;"> Distress </td>
+    <td style="padding:10px;"> Cat </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">6:20 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0724.jpeg" %></td>
+    <td style="padding:10px;"> Hope </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">6:25 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0740.jpeg" %></td>
+    <td style="padding:10px;"> Satisfaction </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">6:35 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0781.jpeg" %></td>
+    <td style="padding:10px;"> Pride </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+</table>
+<table border=1>
+  <tr>
+    <td style="padding:10px;">Time</td>
+    <td style="padding:10px;">Screenshot</td>
+    <td style="padding:10px;">OCC Emotion</td>
+    <td style="padding:10px;">Actor</td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">6:37 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0791.jpeg" %></td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Fear</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Anger</td>
+        </tr>
+      </table>
+    </td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Mickey</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;"> Pete</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">6:39 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0810.jpeg" %></td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Remorse</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Anger</td>
+        </tr>
+      </table>
+    </td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Mickey</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;"> Pete</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">6:58 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0818.jpeg" %></td>
+    <td style="padding:10px;"> Fears Confirmed </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">7:06 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0847.jpeg" %></td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Resentment</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Gloating</td>
+        </tr>
+      </table>
+    </td>
+    <td style="padding:10px;">
+      <table>
+        <tr>
+          <td style="padding:10px;">Mickey</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;"> Parrot</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:10px;">7:14 </td>
+    <td style="padding:10px;"> <%= image_tag "image-0865.jpeg" %></td>
+    <td style="padding:10px;">Gloating  </td>
+    <td style="padding:10px;"> Mickey </td>
+  </tr>
+</table>

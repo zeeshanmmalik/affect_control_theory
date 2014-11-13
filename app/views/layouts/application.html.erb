@@ -9,32 +9,32 @@
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
-    <![endif]-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+        <![endif]-->
 
     <%= stylesheet_link_tag "application", :media => "all" %>
 
-    <!-- For third-generation iPad with high-resolution Retina display: -->
-    <!-- Size should be 144 x 144 pixels -->
-    <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+        <!-- For third-generation iPad with high-resolution Retina display: -->
+        <!-- Size should be 144 x 144 pixels -->
+        <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
 
-    <!-- For iPhone with high-resolution Retina display: -->
-    <!-- Size should be 114 x 114 pixels -->
-    <%= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
+        <!-- For iPhone with high-resolution Retina display: -->
+        <!-- Size should be 114 x 114 pixels -->
+        <%= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
 
-    <!-- For first- and second-generation iPad: -->
-    <!-- Size should be 72 x 72 pixels -->
-    <%= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
+        <!-- For first- and second-generation iPad: -->
+        <!-- Size should be 72 x 72 pixels -->
+        <%= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
 
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <!-- Size should be 57 x 57 pixels -->
-    <%= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+        <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+        <!-- Size should be 57 x 57 pixels -->
+        <%= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
 
-    <!-- For all other devices -->
-    <!-- Size should be 32 x 32 pixels -->
-    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+        <!-- For all other devices -->
+        <!-- Size should be 32 x 32 pixels -->
+        <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
-    <%= javascript_include_tag "application" %>
+        <%= javascript_include_tag "application" %>
   </head>
   <body>
 
@@ -45,15 +45,27 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">OccInteract</a>
+        <%= link_to "OCC-ACT Comparison", home_path, class:"navbar-brand" %> 
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Home", home_path  %></li>
-            <li><%= link_to "Discussion", discussion_path  %></li>
-            <li><%= link_to "Steamboat Willie", sw_vignette_path  %></li>
-            <li><%= link_to "OCC Model", occ_model_path  %></li>
-            <li><%= link_to "Interact Basic", interact_basic_path  %></li>
-            <li><%= link_to "Interact Advance", interact_advanced_path  %></li>
+            <li class = "<%= @active == 'home' ? 'active':'' %>">
+              <%= link_to "Home", home_path %>
+            </li>
+            <li class = "<%= @active == 'discussion' ? 'active':'' %>">
+              <%= link_to "Discussion", discussion_path %>
+            </li>
+            <li class = "<%= @active == 'sw_vignette' ? 'active':'' %>">
+              <%= link_to "Steamboat Willie", sw_vignette_path  %>
+            </li>
+            <li class = "<%= @active == 'occ_model' ? 'active':'' %>">
+              <%= link_to "OCC Model", occ_model_path  %>
+            </li>
+            <li class = "<%= @active == 'interact_basic' ? 'active':'' %>">
+              <%= link_to "Interact Basic", interact_basic_path  %>
+            </li>
+            <li class = "<%= @active == 'interact_advanced' ? 'active':'' %>">
+              <%= link_to "Interact Advance", interact_advanced_path  %>
+            </li>
           </ul>
         </div>
       </div>
@@ -65,29 +77,21 @@
           <%= bootstrap_flash %>
           <%= yield %>
         </div>
-        <!-- <div class="col-lg-3"> -->
-        <!--   <div class="well sidebar-nav"> -->
-        <!--     <h3>Sidebar</h3> -->
-        <!--     <ul class="nav nav-list"> -->
-        <!--       <li class="nav-header">Sidebar</li> -->
-        <!--       <li><%= link_to "Link1", "/path1"  %></li> -->
-        <!--       <li><%= link_to "Link2", "/path2"  %></li> -->
-        <!--       <li><%= link_to "Link3", "/path3"  %></li> -->
-        <!--     </ul> -->
-        <!--   </div><\!--/.well -\-> -->
-        <!-- </div><\!--/span-\-> -->
       </div><!--/row-->
 
-      <footer style="margin-top:100px; text-align:center; border-top: 1px solid #e5e5e5; background-color:#f5f5f5;">
-        <p>Zeeshan Malik</p>
-        <p>University of Waterloo</p>
-        <p>z4malik@uwaterloo.ca</p>
-        <p>CSS 886 - Affective Computing</p>
-        <p>Final Project</p>
-        <p>&copy; Copyright 2014 </p>
-      </footer>
-
     </div> <!-- /container -->
+    <footer style="margin-top:50px; 
+                   text-align:center; 
+                   border-top: 1px solid #e5e5e5; 
+                   background-color:#f5f5f5;
+                   padding: 20px 0;">
+      <p>Zeeshan Malik</p>
+      <p>University of Waterloo</p>
+      <p>z4malik@uwaterloo.ca</p>
+      <p>CSS 886 - Affective Computing</p>
+      <p>Final Project</p>
+    </footer>
+
 
   </body>
 </html>
