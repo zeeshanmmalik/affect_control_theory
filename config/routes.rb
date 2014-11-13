@@ -1,23 +1,23 @@
 Rails.application.routes.draw do
-  get 'pages/index'
+  get 'pages/index', as: :home
 
-  get 'pages/interact_basic'
+  get 'pages/interact_basic', as: :interact_basic
 
-  get 'pages/interact_advanced'
+  get 'pages/interact_advanced', as: :interact_advanced
 
-  get 'pages/references'
+  get 'pages/references', as: :references
 
-  get 'pages/discussion'
+  get 'pages/discussion', as: :discussion
 
-  get 'pages/occ_model'
+  get 'pages/occ_model', as: :occ_model
 
-  get 'pages/sw_vignette'
+  get 'pages/sw_vignette', as: :sw_vignette
 
-  get 'pages/sw_act_sub_verb_obj'
+  get 'pages/sw_act_sub_verb_obj', as: :sw_act_sub_verb_obj
 
-  get 'pages/interact_advanced_report'
+  get 'pages/interact_advanced_report', as: :interact_advanced_report
 
-  get 'pages/interact_basic_report'
+  get 'pages/interact_basic_report', as: :interact_basic_report
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
