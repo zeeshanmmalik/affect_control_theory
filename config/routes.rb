@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'pages/occ_model', as: :occ_model
 
+  get 'pages/act_emotions', as: :act_emotions
+
   get 'pages/sw_vignette', as: :sw_vignette
 
   get 'pages/sw_act_sub_verb_obj', as: :sw_act_sub_verb_obj

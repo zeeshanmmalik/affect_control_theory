@@ -23,6 +23,10 @@ class PagesController < ApplicationController
     @active = 'occ_model'
   end
 
+  def act_emotions
+    @active = 'act_emotions'
+  end
+
   def sw_vignette
     @active = 'sw_vignette'
   end
